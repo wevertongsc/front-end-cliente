@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+  <header>
+    <div class="logo">TrocaFácil</div>
+  </header>
+
+  <main class="container">
+    <section class="card" id="telaAdicionar">
+      <h2>Adicionar Veículo</h2>
+      <button class="btn-primary" id="btnAbrir">Adicionar Veículo</button>
+    </section>
+
+    <section class="card form-hidden" id="formulario">
+      <h2 id="tituloFormulario">Cadastrar Veículo</h2>
+
+      <div class="form-group">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" />
+      </div>
+
+      <div class="form-group">
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" />
+      </div>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label for="ano">Ano:</label>
+          <input type="number" id="ano" />
+        </div>
+
+        <div class="form-group">
+          <label for="km">KM Rodados:</label>
+          <input type="number" id="km" />
+        </div>
+      </div>
+
+      <button class="btn-primary" id="btnSalvar">Salvar</button>
+      <button class="btn-secondary" id="btnCancelar">Cancelar</button>
+    </section>
+
+    <section class="card">
+      <h2>Veículos Cadastrados</h2>
+      <div class="lista-veiculos" id="listaVeiculos"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — Sistema de Troca de Óleo | Em desenvolvimento
+  </footer>
+
+  <script src="Script.js" defer></script>
+</body>
+</html>
