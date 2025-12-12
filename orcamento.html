@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Orçamento</title>
+  <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+  <header>
+    <div class="perfil-header" id="areaPerfil">
+      <div class="avatar-circle" id="avatarLetra">U</div>
+      <div class="perfil-info">
+        <span class="perfil-nome" id="displayNome">...</span>
+        <span class="perfil-email" id="displayEmail">...</span>
+      </div>
+    </div>
+    <div class="logo">TrocaFácil</div>
+    <button id="btnSair" class="btn-logout">Sair</button>
+  </header>
+  <main class="container">
+    <div><a href="dashboard.html" class="btn-voltar">⬅ Voltar ao Painel</a></div>
+    
+    <section class="card">
+      <h2>Simular Orçamento</h2>
+      <div class="form-group">
+        <label>Escolha seu veículo:</label>
+        <select id="selectVeiculo"><option value="">-- Carregando... --</option></select>
+      </div>
+      <button id="btnGerarOrcamento" class="btn-primary">Ver Preços</button>
+    </section>
+
+    <section id="resultadoOrcamento" class="card hidden" style="border-left: 6px solid #28a745;">
+      <h3>Orçamento</h3>
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Tipo de Óleo:</label>
+          <select id="selectOleo" style="font-weight: bold;"></select>
+          <small id="avisoRecomendacao" style="display: block; margin-top: 5px; font-weight: bold;"></small>
+        </div>
+        <div class="form-group">
+          <label>Filtro:</label>
+          <input type="text" id="filtroRec" readonly disabled style="background:#f0f0f0;">
+        </div>
+      </div>
+      <div style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-top: 10px;">
+         <p>Preço do Litro: <strong id="precoLitroDisplay">R$ 0,00</strong></p>
+         <div style="display: flex; justify-content: space-between; margin: 10px 0; border-top: 1px solid #ddd; padding-top: 10px;">
+            <label>Litros:</label>
+            <input type="number" id="qtdLitros" value="4" min="1" max="20" style="width: 80px; text-align: center; font-weight: bold;">
+         </div>
+      </div>
+      <div style="margin-top:20px; text-align:right;">
+        <label style="font-size: 18px;">Total:</label>
+        <div id="valorTotal" style="font-size:36px; font-weight:bold; color:#1a73e8;">R$ 0,00</div>
+      </div>
+      <a href="agendamentos.html" class="btn-primary" style="display:block; text-align:center; text-decoration:none;">Agendar</a>
+    </section>
+  </main>
+  <script src="Script.js" defer></script>
+</body>
+</html>
+
+<footer class="main-footer">
+    <div class="footer-content">
+      
+      <div class="footer-col">
+        <h3>TrocaFácil</h3>
+        <p>A solução completa para o gerenciamento da manutenção do seu veículo. Praticidade e confiança na palma da sua mão.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Fale Conosco</h3>
+        <p>📍 Craíbas, 280 - Rua Pedro Gama</p>
+        <p>📞 (82) 98103- 5244</p>
+        <p>✉️ contato@trocafacil.com.br</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Acesso Rápido</h3>
+        <p><a href="dashboard.html">Painel Principal</a></p>
+        <p><a href="orcamento.html">Fazer Orçamento</a></p>
+        <p><a href="agendamentos.html">Meus Agendamentos</a></p>
+        <p><a href="#">Política de Privacidade</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 TrocaFácil Sistemas Automotivos - Todos os direitos reservados.
+    </div>
+  </footer>
